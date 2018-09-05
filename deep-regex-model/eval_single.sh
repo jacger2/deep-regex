@@ -15,4 +15,4 @@ else
     targ_file=$data_dir/targ-val.txt
 fi
 
-th beam.lua -model $data_dir/$model_name -src_file $src_file -output_file $data_dir/pred.txt -src_dict $data_dir/out_demo.src.dict -targ_dict $data_dir/out_demo.targ.dict -targ_file $targ_file
+th beam.lua -model $data_dir/$model_name -src_file $src_file -output_file $data_dir/pred.txt -src_dict $data_dir/out_demo.src.dict -targ_dict $data_dir/out_demo.targ.dict -targ_file $targ_file -gpuid 1

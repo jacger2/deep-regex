@@ -10,5 +10,5 @@ done;
 
 for train_fraction in "${fractions[@]}"; do
     data_path=$data_dir/data_$train_fraction
-    th train.lua -data_file $data_path/out_demo-train.hdf5 -val_data_file $data_path/out_demo-train.hdf5 -savefile $data_path/model &
+    th train.lua -data_file $data_path/out_demo-train.hdf5 -val_data_file $data_path/out_demo-train.hdf5 -savefile $data_path/model -gpuid 1&
 done;
